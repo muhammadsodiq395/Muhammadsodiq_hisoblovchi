@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammadsodiq</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>📚 To‘plamlar kalkulyatori</h1>
+            <p>To‘plamlar va ularning xossalarini hisoblash</p>
+        </header>
+
+        <section class="input-section">
+            <h2>To‘plamlarni kiriting</h2>
+
+            <div class="sets">
+                <div>
+                    <label for="setA">A to‘plam</label>
+                    <input id="setA" type="text"
+                    placeholder="1, 2, 3, 4">
+                </div>
+
+                <div>
+                    <label for="setB">B to‘plam</label>
+                    <input id="setB" type="text"
+                    placeholder="3, 4, 5, 6">
+                </div>
+            </div>
+        </section>
+
+        <section class="operations">
+            <h2>Amallar</h2>
+
+            <div class="buttons">
+                <button onclick="calculate('union')">
+                    A ∪ B
+                </button>
+
+                <button onclick="calculate('intersection')">
+                    A ∩ B
+                </button>
+
+                <button onclick="calculate('differenceAB')">
+                    A − B
+                </button>
+
+                <button onclick="calculate('differenceBA')">
+                    B − A
+                </button>
+
+                <button onclick="calculate('symmetric')">
+                    A △ B
+                </button>
+
+                <button onclick="calculate('cartesian')">
+                    A × B
+                </button>
+
+                <button onclick="calculate('subset')">
+                    A ⊆ B
+                </button>
+
+                <button onclick="calculate('equal')">
+                    A = B
+                </button>
+            </div>
+        </section>
+
+        <section class="properties">
+            <h2>To‘plamlar xossalari</h2>
+
+            <select id="property">
+                <option value="commutative">
+                    O‘rin almashtirish xossasi
+                </option>
+                <option value="associative">
+                    Guruhlash xossasi
+                </option>
+                <option value="distributive">
+                    Taqsimot xossasi
+                </option>
+                <option value="idempotent">
+                    Idempotentlik xossasi
+                </option>
+                <option value="identity">
+                    Birlik xossasi
+                </option>
+            </select>
+
+            <button class="check-btn"
+            onclick="checkProperty()">
+                Xossani tekshirish
+            </button>
+        </section>
+
+        <section class="result">
+            <h2>Natija</h2>
+            <div id="output">
+                To‘plamlarni kiriting va amalni tanlang.
+            </div>
+        </section>
+
+        <footer>
+            <p>To‘plamlar kalkulyatori © 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

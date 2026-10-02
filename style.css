@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f8;
+    color: #1e293b;
+    padding: 25px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 8px 30px #00000012;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    padding: 30px 15px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #e0e7ff;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: #1d4ed8;
+}
+
+.sets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #2563eb20;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    padding: 13px 10px;
+    border: none;
+    border-radius: 9px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.check-btn {
+    margin-top: 15px;
+    width: 100%;
+    background: #7c3aed;
+}
+
+.check-btn:hover {
+    background: #6d28d9;
+}
+
+.result {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 5px solid #2563eb;
+}
+
+#output {
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+    font-size: 16px;
+}
+
+.result-step {
+    margin-top: 12px;
+    padding: 12px;
+    background: white;
+    border-radius: 8px;
+}
+
+.success {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.error {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .sets {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
